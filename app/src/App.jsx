@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 
 import Tasks from './componentes/Tasks';
+import AddTask from './componentes/AddTask';
 import './App.css'; 
 
+
 const App = () => {
-  // let message = "hello world!!"
   const [tasks, setTasks] = useState([
     {
       id: "1",
-      title: "estudar programação",
+      tittle: "estudar programação",
       completed: false,
     },
     {
       id: "2",
-      title: "ler livros",
+      tittle: "ler livros",
       completed: true,
     },
   ]);
@@ -21,7 +22,8 @@ const App = () => {
   return (
     <>
         <div className="container">
-        <Tasks/>
+        <AddTask />
+        <Tasks tasks={tasks}/>
         </div>
     </>
   );
