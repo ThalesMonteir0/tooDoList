@@ -7,4 +7,19 @@
     justify-content: space-between;
     color: #eee;
     align-items: center;
+    cursor: pointer;
+}
+
+.remove-task-button {
+    background-color: #444;
+    border: none;
+    font-size: 24px;
+    color: chartreuse;
+}
+
+.see-task-details-button {
+    background-color: #444;
+    border: none;
+    font-size: 24px;
+    color: chartreuse;
 }

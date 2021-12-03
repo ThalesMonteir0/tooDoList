@@ -9,8 +9,9 @@ const AddTask = ({handleTaskAddition}) => {
         setInputData(e.target.value);
 
     };
-    const handleTaskclick = () =>{
+    const handleAddTaskclick = () =>{
         handleTaskAddition(inputData)
+        setInputData('')
     }
     return (
         <div className="add-task-container">
@@ -22,7 +23,7 @@ const AddTask = ({handleTaskAddition}) => {
              />
              ; 
             <div className="add-task-button">
-                <Button onClick={handleTaskclick}>Adicionar</Button>
+                <Button onClick={handleAddTaskclick}>Adicionar</Button>
             </div>
             
         </div>
